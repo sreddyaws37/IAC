@@ -1,5 +1,6 @@
 resource "aws_eip" "eip"{
-	tags={
+    count=2	
+    tags={
 		Name="UbuntuLinux"
 	}
 }
